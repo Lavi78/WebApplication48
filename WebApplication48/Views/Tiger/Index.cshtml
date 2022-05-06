@@ -1,0 +1,28 @@
+﻿@model IEnumerable<WebApplication48.Models.Tiger>
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>id</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>description</th>
+    </tr>
+    @foreach (var pro in Model)
+    {
+        <tr>
+            <td>@pro.id</td>
+            <td>@pro.Title</td>
+            <td>@pro.Price</td>
+            <td>@pro.Quantity</td>
+            <td>@pro.descr</td>
+        </tr>
+    }
+</table>
+
+
